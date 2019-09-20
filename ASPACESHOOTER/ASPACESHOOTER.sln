@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPACESHOOTER", "ASPACESHOOTER\ASPACESHOOTER.csproj", "{FC2B373F-9A7E-44FC-A9ED-AB1D974D0D65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC2B373F-9A7E-44FC-A9ED-AB1D974D0D65}.Debug|x86.ActiveCfg = Debug|x86
+		{FC2B373F-9A7E-44FC-A9ED-AB1D974D0D65}.Debug|x86.Build.0 = Debug|x86
+		{FC2B373F-9A7E-44FC-A9ED-AB1D974D0D65}.Release|x86.ActiveCfg = Release|x86
+		{FC2B373F-9A7E-44FC-A9ED-AB1D974D0D65}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A770FA2-D603-473F-99F1-1F2C0ED2754F}
+	EndGlobalSection
+EndGlobal
