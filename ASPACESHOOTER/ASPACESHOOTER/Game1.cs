@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Input;
 namespace ASPACESHOOTER
 {
     /// <summary>
-    /// This is the main type for your game.
+    /// This is the main type for your game.henrik
     /// </summary>
     public class Game1 : Game
     {
@@ -14,6 +14,8 @@ namespace ASPACESHOOTER
 
         //Variabler
         Texture2D ship_texture;
+        Vector2 ship_vector;  //posistion
+        Vector2 ship_speed;  //fart
 
 
         public Game1()
@@ -31,6 +33,9 @@ namespace ASPACESHOOTER
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            ship_vector = new Vector2(380, 400);    //SHIP SPAWN
+            ship_speed = new Vector2(1.5f);     //SHIP SPEED
+            
 
             base.Initialize();
         }
@@ -68,6 +73,7 @@ namespace ASPACESHOOTER
                 Exit();
 
             // TODO: Add your update logic here
+            KeyboardState keyboardState = Keyboard.GetState();
 
             base.Update(gameTime);
         }
@@ -78,12 +84,12 @@ namespace ASPACESHOOTER
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             // TODO: Add your drawing code here
 
             spriteBatch.Begin();
-            spriteBatch.Draw(ship_texture, Vector2.Zero, Color.White);
+            spriteBatch.Draw(ship_texture, ship_vector, Color.White);
             spriteBatch.End();
 
             base.Draw(gameTime);
