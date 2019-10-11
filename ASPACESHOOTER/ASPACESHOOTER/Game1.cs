@@ -12,51 +12,32 @@ namespace ASPACESHOOTER
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        //Variabler
-        Texture2D ship_texture;
-        Vector2 ship_vector;  //posistion
-        Vector2 ship_speed;  //fart
+        Player player;
 
-
+                      
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
 
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
+       
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-            ship_vector = new Vector2(380, 400);    //SHIP SPAWN
-            ship_speed = new Vector2(1.5f);     //SHIP SPEED
-            
-
-            base.Initialize();
+                    base.Initialize();
         }
 
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
+      
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
+           
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
-            ship_texture = this.Content.Load<Texture2D>("Sprites/ship");
+            player = new Player(Content.Load<Texture2D>("Sprites/ship"), 380, 400, 14f, 14f);
+
         }
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// game-specific content.
-        /// </summary>
+        
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
@@ -73,9 +54,10 @@ namespace ASPACESHOOTER
                 Exit();
 
             // TODO: Add your update logic here
-            KeyboardState keyboardState = Keyboard.GetState();
 
-            base.Update(gameTime);
+            player.Update(Window);
+
+           
         }
 
         /// <summary>
@@ -89,7 +71,7 @@ namespace ASPACESHOOTER
             // TODO: Add your drawing code here
 
             spriteBatch.Begin();
-            spriteBatch.Draw(ship_texture, ship_vector, Color.White);
+            player.Draw(spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);
