@@ -26,7 +26,8 @@ namespace ASPACESHOOTER
 
         public void Draw(SpriteBatch spriteBach)
         {
-            mmm
+            
+
         }
     }
 }

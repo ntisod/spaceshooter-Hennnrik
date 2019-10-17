@@ -22,13 +22,13 @@ namespace ASPACESHOOTER
         }
 
        
-        protected override void Initialize()
+        protected override void Initialize() //INITIALIZE-------------------------------------------
         {
                     base.Initialize();
         }
 
       
-        protected override void LoadContent()
+        protected override void LoadContent() //LOADCONTENT--------------------------
         {
            
             spriteBatch = new SpriteBatch(GraphicsDevice);
@@ -40,38 +40,32 @@ namespace ASPACESHOOTER
         
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
+         
+
+
         }
 
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        protected override void Update(GameTime gameTime)
+
+        protected override void Update(GameTime gameTime) //UPDATE-----------------------------------------------------------
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
 
             player.Update(Window);
 
            
         }
 
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        protected override void Draw(GameTime gameTime)
+
+        protected override void Draw(GameTime gameTime) //DRAW------------------------------------------------------------
         {
             GraphicsDevice.Clear(Color.Black);
-
-            // TODO: Add your drawing code here
-
+                   
             spriteBatch.Begin();
+
             player.Draw(spriteBatch);
+
             spriteBatch.End();
 
             base.Draw(gameTime);
