@@ -9,20 +9,24 @@ using System.Threading.Tasks;
 
 namespace ASPACESHOOTER
 {
-    class PrintText
+    class Enemy : MovingObject
     {
-        SpriteFont font;
 
-        public PrintText(SpriteFont font)
-        {
-            this.font = font;
-        }
+        bool isalive = true;
 
-        public void Print(string text, SpriteBatch spriteBatch, int X, int Y)
+        public Enemy(Texture2D texture, float X, float Y, float speedX, float speedY) : base(texture, X, Y, speedX, speedY)
         {
 
-            spriteBatch.DrawString(font, text, new Vector2(X, Y), Color.White);
+
 
         }
+
+        public void Update(GameWindow window)
+        {
+
+
+
+        }
+
     }
 }

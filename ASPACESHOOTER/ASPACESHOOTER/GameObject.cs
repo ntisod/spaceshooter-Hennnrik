@@ -45,7 +45,7 @@ namespace ASPACESHOOTER
 
     //====================================================================================================================================================
     //===Moving object
-    class MovingObject : GameObject
+    abstract class MovingObject : GameObject
     {
 
         protected Vector2 speed; //Speed

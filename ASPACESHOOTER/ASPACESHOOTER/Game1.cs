@@ -13,6 +13,7 @@ namespace ASPACESHOOTER
         SpriteBatch spriteBatch;
 
         Player player;
+        PrintText printText;
 
                       
         public Game1()
@@ -34,6 +35,8 @@ namespace ASPACESHOOTER
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             player = new Player(Content.Load<Texture2D>("Sprites/ship"), 380, 400, 14f, 14f);
+
+            printText = new PrintText(Content.Load<SpriteFont>("myfont"));
 
         }
 
