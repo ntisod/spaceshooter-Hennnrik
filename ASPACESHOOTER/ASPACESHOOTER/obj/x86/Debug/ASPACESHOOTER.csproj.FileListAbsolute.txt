@@ -22,3 +22,5 @@ C:\Users\henrik.willamo\Documents\GitHub\spaceshooter-Hennnrik\ASPACESHOOTER\ASP
 C:\Users\henrik.willamo\Documents\GitHub\spaceshooter-Hennnrik\ASPACESHOOTER\ASPACESHOOTER\obj\x86\Debug\ASPACESHOOTER.csproj.CopyComplete
 C:\Users\henrik.willamo\Documents\GitHub\spaceshooter-Hennnrik\ASPACESHOOTER\ASPACESHOOTER\obj\x86\Debug\ASPACESHOOTER.exe
 C:\Users\henrik.willamo\Documents\GitHub\spaceshooter-Hennnrik\ASPACESHOOTER\ASPACESHOOTER\obj\x86\Debug\ASPACESHOOTER.pdb
+C:\Users\henrik.willamo\Documents\GitHub\spaceshooter-Hennnrik\ASPACESHOOTER\ASPACESHOOTER\bin\Windows\x86\Debug\Content\Sprites\myFont.xnb
+C:\Users\henrik.willamo\Documents\GitHub\spaceshooter-Hennnrik\ASPACESHOOTER\ASPACESHOOTER\bin\Windows\x86\Debug\Content\Sprites\mine.xnb

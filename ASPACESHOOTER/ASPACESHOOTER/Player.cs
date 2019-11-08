@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ASPACESHOOTER
 {
-    class Player : MovingObject
+    class Player : PhysicalObject
     {
 
         int points = 0;

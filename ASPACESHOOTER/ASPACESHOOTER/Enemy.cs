@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace ASPACESHOOTER
 {
-    class Enemy : MovingObject
+    class Enemy : PhysicalObject
     {
 
-        bool isalive = true;
+        bool isAlive= true;
 
-        public Enemy(Texture2D texture, float X, float Y, float speedX, float speedY) : base(texture, X, Y, speedX, speedY)
+        public Enemy(Texture2D texture, float X, float Y) : base(texture, X, Y, 6f, 0.3f)
         {
 
 
@@ -24,9 +24,22 @@ namespace ASPACESHOOTER
         public void Update(GameWindow window)
         {
 
+            //Moves the enemy
+            posision.X += speed.X;
 
+            //Stops enemy from leaving (side to side) and switches directions
+            if (posision.X > window.ClientBounds.Width - texture.Width || posision.X < 0) speed.X *= -1;
+            posision.Y += speed.Y;
+
+            //inactivates enemy once its past screan
+            if (posision.Y > window.ClientBounds.Height) isAlive = false;
 
         }
 
+        public bool IsAlive
+        {
+            get { return isAlive; }
+            set { isAlive = value;  }
+        }
     }
 }

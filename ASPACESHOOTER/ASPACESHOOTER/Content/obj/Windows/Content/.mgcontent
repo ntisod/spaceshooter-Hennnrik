@@ -4,9 +4,13 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/henrik.willamo/Documents/GitHub/spaceshooter-Hennnrik/ASPACESHOOTER/ASPACESHOOTER/Content/Sprites/mine.png</File>
+    <File>C:/Users/henrik.willamo/Documents/GitHub/spaceshooter-Hennnrik/ASPACESHOOTER/ASPACESHOOTER/Content/Sprites/myFont.spritefont</File>
     <File>C:/Users/henrik.willamo/Documents/GitHub/spaceshooter-Hennnrik/ASPACESHOOTER/ASPACESHOOTER/Content/Sprites/ship.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>
