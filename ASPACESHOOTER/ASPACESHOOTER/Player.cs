@@ -12,7 +12,7 @@ namespace ASPACESHOOTER
     class Player : PhysicalObject
     {
 
-        int points = 0;
+        public int Points { get { return Points; } set { Points = value; } }
 
 
 
